@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+   background-image: url(bg1.jpg);  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(245, 222, 179);
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+nav ul li{
+    list-style: none;  
+    display: inline-block;
+    margin: 20px;
+    font-size: large;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+nav img{
+    height: 120px;
+    width: 120px;
+}
+nav .icon i{
+    font-size: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+nav .icon i:hover{
+    color: #fac031;
+}
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.first div{
+    width: 400px;
+}
+.first .left{
+    font-size: 2rem;
+}
+.first .left h1{
+    line-height: 10px;
+}
+.first .left .easy{
+    position: relative;
+    left: -30px;
+}
+.first .left .food{
+    color: #fac031;
+    font-family: mv boli;
+}
+.first .left .desc{
+    font-size: 16px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+.first .left .btn{
+    position: relative;
+    top: 70px;
+    left: 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(192, 150, 71);
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.first .left .btn:hover{
+    transform: scale(1.1)
+}
+.first .left .btn i{
+    padding-left: 5px;
+}
+.first .left .btn i:hover{
+    transform: translateX(5px);
+}
+.first .right img{
+    width: 600px;
+    position: relative;
+    left: -100px;
+    top: 45px;
+}
+
+/* -----------------------about------------------------ */
+
+.second{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.second div{
+    width: 500px;
+}
+.second .left img{
+    width: 620px;
+    height: 500px;
+    left: -50px;
+    position: relative;
+    top: 60px;
+}
+.second .right h1{
+    font-size: 3rem;
+    position: relative;
+    bottom: 30px;
+}
+.second .right h2{
+    margin: 0 0 30px 0;
+}
+
+.second .right h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.second .right p{
+    text-align: justify;
+}
+
+
+/* -------------------------menu------------------ */
+
+
+ h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+h1 span{
+    color: #fac031;
+    margin-left: 20px;
+    font-family: mv boli;
+}
+.third{
+    height: 150vh;
+    /* display: grid;
+    grid-template-columns: 200px 200px 200px; */
+    /* flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly; */
+}
+.third .menubox{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.third .menubox .menucard{
+    width: 250px;
+    /* border: 1px solid black; */
+    padding: 20px;
+    height: 410px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.third .menubox .menucard .menuimage{
+    width: 245px;
+    height: 200px;
+    margin: 0 auto;
+}
+.third .menubox .menucard .menuimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.third .menubox .menucard .menuimage img:hover{
+    transform: scale(1.05);
+}
+.third .menubox .menucard .lovereact{
+    position: relative;
+    top: -180px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 0 0 6px #000;
+}
+.third .menubox .menucard .lovereact i:hover{
+    color:  #fac031;;
+}
+.third .menubox .menucard h2{
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+.third .menubox .menucard p{
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-size: small;
+}
+.third .menubox .menucard h3{
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+.third .menubox .menucard .menuicon{
+    color: #fac031;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+.third .menubox .menucard button{
+    position: relative;
+    top: -45px;
+    padding: 2px 50px;
+    left: 35px;
+    font-size: medium;
+    background-color: black;
+    color: #fac031;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.third .menubox .menucard button:hover{
+    color: white;
+}
+
+/* ------------------gallery--------------------- */
+
+h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 60px;
+    margin-bottom: 30px; */
+}
+h1 span{
+    color: #fac031;
+    margin-left: 20px;
+    font-family: mv boli;
+}
+.four{
+    height: 100vh;
+}
+.four .gallery{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.four .gallery .box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.four .gallery .box1 img{
+    width: 400px;
+    height: 300px;
+    transition: 0.3s; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.four .gallery .box1 img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* --------------------------Customer--------------- */
+h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 60px;
+    margin-bottom: 30px; */
+}
+h1 span{
+    color: #fac031;
+    margin-left: 20px;
+    font-family: mv boli;
+}
+.five{
+    height: 80vh;
+}
+.five .reviews{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.five .reviews .reviewbox{
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.five .reviews .reviewbox img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    left: 25px;
+    border: 5px solid #cccccc;
+}
+.five .reviews .reviewbox img:hover{
+    transform: scale(1.1);
+    /* transform: translateY(-10px); */
+    cursor: pointer;
+}
+
+.five .reviews .reviewbox h2{
+    position: relative;
+    left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.five .reviews .reviewbox .reviewicon{
+    position: relative;
+    left: 80px;
+    margin-bottom: 10px;
+    color: #fac031;
+}
+.five .reviews .reviewbox p{
+    position: relative;
+    width: 200px;
+    left: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* --------------------------ORDER------------------- */
+h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 60px;
+    margin-bottom: 30px; */
+}
+h1 span{
+    color: #fac031;
+    margin-left: 20px;
+    font-family: mv boli;
+    margin-right: 20px;
+}
+.six{
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+}
+.six .left img{
+    width: 500px;
+    margin-left: 50px;
+    position: relative;
+    top: -80px;
+}
+.six .right form{
+    /* width: 700px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+    position: relative;
+    top: 40px;
+}
+.six .right form .input p{
+    line-height: 40px;
+}
+.six .right form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+.six .right button{
+    position: relative;
+    top: 70px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgb(192, 150, 71);
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.six .right button:hover{
+    transform: scale(1.1);
+}
+/* --------------------------our team------------------------ */
+h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 60px;
+    margin-bottom: 30px; */
+}
+h1 span{
+    color: #fac031;
+    margin-left: 20px;
+    font-family: mv boli;
+}
+.seven{
+    height: 60vh;
+}
+.seven .teams{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5%;
+}
+.seven .teams .chefteam{
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   box-shadow: 0 0 8px rgba(0,0,0,0.5);;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.4s;
+}
+.seven .teams .chefteam img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+    z-index: 50;
+}
+.seven .teams .chefteam img:hover{
+    margin-top: -270px;
+}
+.seven .teams .chefteam .info{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transition: 0.4s;
+}
+.seven .teams .chefteam .info .name{
+    color: #fac031;
+    margin-bottom: 5px;
+}
+.seven .teams .chefteam .info .bio{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 15px;
+    position: relative;
+    left: 90px;
+}
+/* ---------------------footer------------------------------------ */
+footer{
+    height: 37vh;
+    background-color: #e6e2e2;
+}
+footer .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.footer h2{
+    margin-top: 15px;
+    line-height: 50px;
+}
+footer .footer ul li{
+    list-style: none;
+}
+footer .footer .fifthfooter i{
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+footer .footer .fifthfooter i:hover{
+    color: #fac031;
+    cursor: pointer;
+}
+footer p{
+    text-align: center;
+    color: #fac031;
+}
